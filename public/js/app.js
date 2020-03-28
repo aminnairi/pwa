@@ -65,11 +65,11 @@ const intersectionObserverHandler = (entries, observer) => {
 
         data.forEach(({placeholder, image: src, content: {title, description: text}}) => {
             const card = createCard({
-                alt: text
-                , placeholder
-                , src
-                , text
-                , title
+                alt: text,
+                placeholder,
+                src,
+                text,
+                title
             });
 
             const image = card.querySelector("img");
